@@ -204,7 +204,7 @@ if(slashCounter == 4 && queue == 1){ // signal quality
 	  }
 	  else if(rxData[15] == '9'){
 		  // not know or not detectable
-		  // tekrar aÃ§ kapa yapÄ±lmalÄ±!!!!!!!!
+		  // tekrar aç kapa yapýlmalý!!!!!!!!
 			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_SET);
 			HAL_Delay(400);
 			HAL_GPIO_WritePin(GPIOB,GPIO_PIN_2,GPIO_PIN_RESET);
@@ -281,8 +281,8 @@ if(slashCounter == 2 && queue == 3){
 	}
 if(slashCounter == 5  && queue == 4){
 
-	// OK mesajÄ± gelmiyorsa mesaj gitmemiÅŸ olabilir bunu kontrol ettirmedim cÃ¼nkÃ¼
-	// mesaj boyutu deÄŸiÅŸince index deÄŸiÅŸir!
+	// OK mesajý gelmiyorsa mesaj gitmemiþ olabilir bunu kontrol ettirmedim cünkü
+	// mesaj boyutu deðiþince index deðiþir!
 	if(rxData[0] == 'A' && rxData[1] == 'T'){
 			memset(rxData,'\0',sizeof(rxData));
 			rxCounter = 0;
